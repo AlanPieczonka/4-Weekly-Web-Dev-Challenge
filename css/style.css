@@ -1,0 +1,189 @@
+/*
+Orange color: #e67e22;
+*/
+
+
+
+/*////////////////////////////////////////////////////////////////////////////*/
+/* BASIC SETUP */
+/*////////////////////////////////////////////////////////////////////////////*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #4B637F;
+    color: #555;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+
+.clearfix {zoom: 1} 
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*////////////////////////////////////////////////////////////////////////////*/
+/* REUSABLE COMPONENTS */
+/*////////////////////////////////////////////////////////////////////////////*/
+
+.row {
+    max-width: 928px;
+    margin: 0 auto;  /*margin: 0 auto;*/
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.relative{
+    position: relative;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background-color: #56CCC8;
+    margin-top: 100px;
+}
+
+.header__hamburger{
+    cursor: pointer;
+    width: 60px;
+    height: 100%;
+    padding-top: 14px;
+    padding-left: 17px;
+    float: left;
+}
+
+    .header__hamburger__icon{
+        color: #FFFFFF;
+        font-size: 3rem;
+    }
+
+nav{
+    float: right;
+    width: calc(100% - 60px);
+    height: 60px;
+    background-color: #FFFFFF;
+}
+    
+.nav__list{
+    float: left;
+}
+    ul{
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    li{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.6rem;
+        display: inline;
+        list-style: none;
+        margin-left: 40px;
+        transform: 1s;
+    }
+    li:hover{
+        color: #66d0cc;
+        cursor: pointer;
+    }
+
+
+
+.nav__div--icons{
+    float: right;
+    margin-left: -50px;
+}
+.nav__ul{
+    margin-top: 15px;
+    margin-right: 25px;    
+}
+
+.li__icons{
+    margin-left: 20px;
+}
+
+.nav__icons--social{
+    font-size: 2.4rem;
+    color: #b2b9bd;
+    transition: 0.2s;
+}
+
+.nav__icons--social--search:hover,
+.nav__icons--social--search:active,
+.nav__icons--social--search:focus{
+    color: #56CCC8;
+}
+
+.nav__icons--social--fb:hover,
+.nav__icons--social--fb:active,
+.nav__icons--social--fb:focus{
+    color: #3B5998;
+}
+
+.nav__icons--social--twitter:hover,
+.nav__icons--social--twitter:active,
+.nav__icons--social--twitter:focus{
+    color: #0084b4;
+}
+
+.nav__icons--social--gplus:hover,
+.nav__icons--social--gplus:active,
+.nav__icons--social--gplus:focus{
+    color: #D34836;
+}
+
+.nav__icons--social--user:hover,
+.nav__icons--social--user:active,
+.nav__icons--social--user:focus{
+    color: #87D37C;
+}
+
+
+.header__input{
+    font-size: 0.8rem;
+    margin: 0;
+    position: relative;
+    bottom: 4px;
+    border: 1px solid #B7BDC1;
+    width: 122px;
+    font-size: 1.5rem;
+    margin-left: 12px;
+    margin-right: -8px;
+    display: none;
+}
+
+
+.nav__line::after{
+    content: "";
+    position: absolute;
+    height: 60px;
+    bottom: -19px;
+    width: 1px;
+    background-color: #dde2e4;
+    margin-left: 20px;
+}
+
+
+.nav__line--first.closed::after{
+    visibility: hidden;
+}
