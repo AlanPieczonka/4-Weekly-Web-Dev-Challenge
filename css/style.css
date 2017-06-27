@@ -54,6 +54,9 @@ section {
   clear: both;
 }
 
+a{
+    text-decoration: none;
+}
 
 .relative{
     position: relative;
@@ -106,7 +109,6 @@ nav{
         color: #66d0cc;
         cursor: pointer;
     }
-
 
 
 .nav__div--icons{
@@ -186,4 +188,37 @@ nav{
 
 .nav__line--first.closed::after{
     visibility: hidden;
+}
+
+
+
+/*MOBILE NAV*/
+.nav--mobile{
+    float: auto;
+    width: 100%;
+    height: 270px; /*temporary*/
+    margin-top: 10px;
+}
+
+.nav--mobile__ul{
+       margin: 0;
+}
+
+.nav--mobile__li{
+    display: block;
+    border-top: 1px solid #56CCC8;
+    border-bottom: 1px solid #56CCC8;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+.nav--mobile__li:first-child{
+    margin-top: 20px;
+}
+
+.nav--mobile__li__a{
+    text-align: center;
 }
