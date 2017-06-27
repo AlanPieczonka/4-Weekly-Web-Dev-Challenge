@@ -73,14 +73,33 @@ header{
     cursor: pointer;
     width: 60px;
     height: 100%;
-    padding-top: 14px;
-    padding-left: 17px;
     float: left;
+    background: transparent;
+    border: 0;
 }
 
     .header__hamburger__icon{
         color: #FFFFFF;
         font-size: 3rem;
+    }
+
+    .header__hamburger__label{
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+      white-space: nowrap;
+    }
+    
+    .header__hamburger__icon--open{
+        display: block;
+    }
+    .header__hamburger__icon--close{
+        display: none
     }
 
 nav{
@@ -106,7 +125,7 @@ nav{
         transform: 1s;
     }
     li:hover{
-        color: #66d0cc;
+        color: #66D0CC;
         cursor: pointer;
     }
 
@@ -181,7 +200,7 @@ nav{
     height: 60px;
     bottom: -19px;
     width: 1px;
-    background-color: #dde2e4;
+    background-color: #DDE2E4;
     margin-left: 20px;
 }
 
@@ -197,7 +216,8 @@ nav{
     float: auto;
     width: 100%;
     height: 270px; /*temporary*/
-    margin-top: 10px;
+    margin: 10px 0 10px 0;
+    display: none;
 }
 
 .nav--mobile__ul{
@@ -220,5 +240,71 @@ nav{
 }
 
 .nav--mobile__li__a{
-    text-align: center;
+   color: #BDC3C7;
 }
+
+/*SOCIAL*/
+.social{
+    margin-top: 15px;
+    width: 220px;
+    height: 150px;
+    position: relative;
+    float: right;
+}
+
+.social--fb{
+    background-color: #4D6BAA;
+}
+
+.social--twitter{
+    background-color: #4FC6F8;
+}
+
+.social__span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    position: absolute;
+}
+
+.social__span--counter{
+    font-weight: 700;
+    bottom: 20px;
+    left: 25px;
+}
+
+.social__span--follow{
+    font-weight: 300;
+    bottom: 20px;
+    left: 120px;
+}
+
+.social__span--following{
+    font-weight: 300;
+    bottom: 20px;
+    left: 100px;
+}
+
+.social__icon{
+    color: #FFFFFF;
+    position: absolute;
+    font-size: 5rem;
+}
+
+.social__icon--fb{
+    top: 22px;
+    left: 30px;
+}
+
+.social__icon--twitter{
+    top: 22px;
+    left: 25px;
+}
+
+.social__icon--addchecked{
+    font-size: 3rem;
+    bottom: 12px;
+    right: 10px;
+    cursor: pointer;
+}
+

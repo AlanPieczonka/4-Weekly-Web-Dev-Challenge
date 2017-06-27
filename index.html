@@ -20,9 +20,11 @@
 
     <div class="row">
         <header class="clearfix">
-            <div class="header__hamburger">
-                <i class="ion-navicon-round header__hamburger__icon"></i>
-            </div>
+            <button class="header__hamburger">
+               <i class="ion-navicon-round header__hamburger__icon header__hamburger__icon--open"></i>
+               <i class="ion-close-round header__hamburger__icon header__hamburger__icon--close"></i>
+               <span class="header__hamburger__label">Open/Close Menu</span>
+            </button>
             <nav>
                 <div class="nav__list">
                     <ul>
@@ -48,7 +50,6 @@
     </div>
     
     <div class="row">
-        
         <nav class="nav--mobile">         
                    <ul class="nav--mobile__ul">
                         <li class="nav--mobile__li"><a class="nav--mobile__li__a" href="#">Home</a></li>
@@ -58,10 +59,26 @@
                         <li class="nav--mobile__li"><a class="nav--mobile__li__a" href="#">Contact</a></li>
                     </ul>                    
         </nav>
-        
-        
     </div>
-
+    
+    <div class="row">
+        <div class="social social--fb">
+                <i class="ion-social-facebook social__icon social__icon social__icon--fb"></i>
+                <span class="social__span social__span--counter social__span--counter--fb">0K</span>
+                <span class="social__span social__span--follow">Follow</span>
+                <i class="ion-android-add-circle social__icon social__icon--addchecked"></i>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="social social--twitter">
+                <i class="ion-social-twitter social__icon social__icon social__icon--twitter"></i>
+                <span class="social__span social__span--counter social__span--counter--twitter">89k</span>
+                <span class="social__span social__span--following">Following</span>
+                <i class="ion-ios-checkmark social__icon social__icon--addchecked"></i>
+        </div>
+    </div>
+    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/script.js"></script>
 </body>
