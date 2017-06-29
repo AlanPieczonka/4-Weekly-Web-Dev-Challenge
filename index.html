@@ -9,7 +9,6 @@
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/grid.css">
         <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
-        <link rel="stylesheet" type="text/css" href="css/animate.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/queries.css">
 	   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
@@ -19,48 +18,48 @@
 <body>
 
     <div class="row">
-        <header class="clearfix">
+        <header class="header">
             <button class="header__hamburger">
                <i class="ion-navicon-round header__hamburger__icon header__hamburger__icon--open"></i>
                <i class="ion-close-round header__hamburger__icon header__hamburger__icon--close"></i>
                <span class="header__hamburger__label">Open/Close Menu</span>
             </button>
-            <nav>
-                <div class="nav__list">
-                    <ul>
-                        <li><a>Home</a></li>
-                        <li><a>Store</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Contact</a></li>
+            <nav class="nav nav--desktop">
+                <div class="nav__div nav__div--list">
+                    <ul class="ul">
+                        <li class="li"><a>Home</a></li>
+                        <li class="li"><a>Store</a></li>
+                        <li class="li"><a>Blog</a></li>
+                        <li class="li"><a>About</a></li>
+                        <li class="li"><a>Contact</a></li>
                     </ul>
                 </div>
-                <div class="nav__div--icons">
-                    <ul class="nav__ul">
-                        <li class="li__icon--search relative nav__line nav__line--first"><a href="#"><i class="ion-ios-search-strong nav__icons--social nav__icons--social--search"></i></a></li>
+                <div class="nav__div nav__div--icons">
+                    <ul class="nav__div--icons__ul">
+                        <li class="li li--icon--search relative nav__line nav__line--first"><a href="#"><i class="ion-ios-search-strong nav__icons--social nav__icons--social--search"></i></a></li>
                         <input class="header__input" type="search" placeholder="Search &period; &period; &period;" >
-                        <li><a href="https://facebook.com" target="_blank"><i class="ion-social-facebook nav__icons--social nav__icons--social--fb"></i></a></li>
-                        <li class="li__icons"><a href="https://twitter.com" target="_blank"><i class="ion-social-twitter nav__icons--social nav__icons--social--twitter"></i></a></li>
-                        <li class="li__icons relative nav__line"><a href="https://plus.google.com" target="_blank"><i class="ion-social-googleplus-outline nav__icons--social nav__icons--social--gplus"></i></a></li>
-                        <li><a href="#"><i class="ion-ios-person nav__icons--social nav__icons--social--user"></i></a></li>
+                        <li class="li"><a href="https://facebook.com" target="_blank"><i class="ion-social-facebook nav__icons--social nav__icons--social--fb"></i></a></li>
+                        <li class="li li--icons"><a href="https://twitter.com" target="_blank"><i class="ion-social-twitter nav__icons--social nav__icons--social--twitter"></i></a></li>
+                        <li class="li li--icons relative nav__line"><a href="https://plus.google.com" target="_blank"><i class="ion-social-googleplus-outline nav__icons--social nav__icons--social--gplus"></i></a></li>
+                        <li class="li"><a href="#"><i class="ion-ios-person nav__icons--social nav__icons--social--user"></i></a></li>
                     </ul>
                 </div>
             </nav>
         </header>
     </div>
-    
+
     <div class="row">
-        <nav class="nav--mobile">         
+        <nav class="nav nav--mobile">
                    <ul class="nav--mobile__ul">
-                        <li class="nav--mobile__li"><a class="nav--mobile__li__a" href="#">Home</a></li>
-                        <li class="nav--mobile__li"><a class="nav--mobile__li__a" href="#">Store</a></li>
-                        <li class="nav--mobile__li"><a class="nav--mobile__li__a" href="#">Blog</a></li>
-                        <li class="nav--mobile__li"><a class="nav--mobile__li__a" href="#">About</a></li>
-                        <li class="nav--mobile__li"><a class="nav--mobile__li__a" href="#">Contact</a></li>
-                    </ul>                    
+                        <li class="li nav--mobile__li"><a class="nav--mobile__li__a" href="#">Home</a></li>
+                        <li class="li nav--mobile__li"><a class="nav--mobile__li__a" href="#">Store</a></li>
+                        <li class="li nav--mobile__li"><a class="nav--mobile__li__a" href="#">Blog</a></li>
+                        <li class="li nav--mobile__li"><a class="nav--mobile__li__a" href="#">About</a></li>
+                        <li class="li nav--mobile__li"><a class="nav--mobile__li__a" href="#">Contact</a></li>
+                    </ul>
         </nav>
     </div>
-    
+
     <div class="row">
         <div class="social social--fb">
                 <i class="ion-social-facebook social__icon social__icon social__icon--fb"></i>
@@ -69,7 +68,7 @@
                 <i class="ion-android-add-circle social__icon social__icon--addchecked"></i>
         </div>
     </div>
-    
+
     <div class="row">
         <div class="social social--twitter">
                 <i class="ion-social-twitter social__icon social__icon social__icon--twitter"></i>
@@ -78,7 +77,7 @@
                 <i class="ion-ios-checkmark social__icon social__icon--addchecked"></i>
         </div>
     </div>
-    
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/script.js"></script>
 </body>

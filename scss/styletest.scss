@@ -1,0 +1,229 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+.relative{
+  position: relative;
+}
+
+.header{
+  @include clearFix;
+  width: 100%;
+  height: 60px;
+  background-color: $turquoise;
+  margin-top: 100px;
+
+  &__input{
+    font-size: 0.8rem;
+    margin: 0;
+    position: relative;
+    bottom: 4px;
+    border: 1px solid #B7BDC1;
+    width: 122px;
+    font-size: 1.5rem;
+    margin-left: 12px;
+    margin-right: -8px;
+    display: none;
+  }
+
+  &__hamburger{
+    cursor: pointer;
+    width: 60px;
+    height: 100%;
+    float: left;
+    background: transparent;
+    border: 0;
+      &__icon{
+        color: $white;
+        font-size: 3rem;
+        &--open{
+          display: block;
+        }
+        &--close{
+          display: none;
+        }
+      }
+      &__label{
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        white-space: nowrap;
+      }
+  }
+}
+
+.nav--desktop{
+  float: right;
+  width: calc(100% - 60px);
+  height: 60px;
+  background-color: $white;
+}
+
+.nav__div--list{
+  float: left;
+}
+
+.ul{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.li{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    display: inline;
+    list-style: none;
+    margin-left: 40px;
+    transform: 1s;
+    &:hover{
+      color: #66D0CC;
+      cursor: pointer;
+    }
+}
+
+.nav__div--icons{
+  float: right;
+  margin-left: -50px;
+  &__ul{
+    margin-top: 15px;
+    margin-right: 25px;
+  }
+}
+
+.li--icons{
+  margin-left: 20px;
+}
+
+.nav__icons--social{
+  font-size: 2.4rem;
+  color: $grey;
+  transition: 0.2s;
+  &--search:hover,
+  &--search:active,
+  &--search:focus,{
+    color: $turquoise;
+  }
+  &--fb:hover,
+  &--fb:active,
+  &--fb:focus{
+    color: $fb;
+  }
+  &--twitter:hover,
+  &--twitter:active,
+  &--twitter:focus{
+    color: $twitter;
+  }
+  &--gplus:hover,
+  &--gplus:active,
+  &--gplus:focus{
+    color: $gplus;
+  }
+  &--user:hover,
+  &--user:active,
+  &--user:focus{
+    color: $user;
+  }
+}
+
+.nav__line::after{
+  content: "";
+  position: absolute;
+  height: 60px;
+  bottom: -19px;
+  width: 1px;
+  background-color: #DDE2E4;
+  margin-left: 20px;
+}
+.nav__line--first.closed::after{
+  visibility: hidden;
+}
+
+/*MOBILE NAV*/
+.nav--mobile{
+  float:auto;
+  width: 100%;
+  height: 270px;
+  margin: 10px 0 10px 0;
+  background-color: $white;
+  display: none;
+  &__ul{
+    margin: 0;
+  }
+  &__li{
+    display:block;
+    border-top: 1px solid #56CCC8;
+    border-bottom: 1px solid #56CCC8;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 5px;
+    &:first-child{
+      margin-top: 20px;
+    }
+    &__a{
+      color: $lightGrey;
+    }
+  }
+}
+
+/*SOCIAL*/
+.social{
+  margin-top: 15px;
+  width: 220px;
+  height: 150px;
+  position: relative;
+  float: right;
+
+  &--fb{
+    background-color: $fb;
+  }
+  &--twitter{
+    background-color: $twitter;
+  }
+
+  &__span{
+    font-family: $font--main;
+    font-size: 1.6rem;
+    color: $white;
+    position: absolute;
+      &--counter{
+        font-weight: $font-bold;
+        bottom: 20px;
+        left: 25px;
+      }
+      &--follow{
+        font-weight: $font-light;
+        bottom: 20px;
+        left: 120px;
+      }
+      &--following{
+        font-weight: 300;
+        bottom: 20px;
+        left: 100px;
+      }
+  }
+    &__icon{
+      color: $white;
+      position: absolute;
+      font-size: 5rem;
+      &--fb{
+        top: 22px;
+        left: 30px;
+      }
+      &--twitter{
+        top: 22px;
+        left: 25px;
+      }
+      &--addchecked{
+        font-size: 3rem;
+        bottom: 12px;
+        right: 10px;
+        cursor: pointer;
+      }
+    }
+}

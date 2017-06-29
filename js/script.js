@@ -1,33 +1,33 @@
 $(document).ready(function() {
     console.log( "JS WORKS" );
-    
+
     const header__hamburger = document.querySelector('.header__hamburger');
-    const li__iconSearch = document.querySelector('.li__icon--search');
-    
+    const li__iconSearch = document.querySelector('.li--icon--search');
+
     function hamburgerIconOpen(){
         $('.header__hamburger__icon--open').css('display', 'block');
         $('.header__hamburger__icon--close').css('display', 'none');
     }
-    
+
     function hamburgerIconClose(){
         $('.header__hamburger__icon--open').css('display', 'none');
         $('.header__hamburger__icon--close').css('display', 'block');
     }
-    
+
     //HAMBURGER FUNCTIONALITY ON DESKTOP
     let nav__listIsOpened = true;
     header__hamburger.addEventListener('click', function(){
         if(nav__listIsOpened){
-             $('.nav__list').fadeOut(300);
+             $('.nav__div--list').fadeOut(300);
              nav__listIsOpened = false;
              hamburgerIconClose();
         }else{
-             $('.nav__list').fadeIn(300);
+             $('.nav__div--list').fadeIn(300);
              nav__listIsOpened = true;
              hamburgerIconOpen();
         }
     });
-    
+
 
     //HAMBURGER FUNCTIONALITY ON MOBILE
     let navMobileIsOpened = false;
@@ -42,12 +42,12 @@ $(document).ready(function() {
             });
         }
     });
-    
+
     //HAMBURGER ICON OPEN/CLOSE
-    
-    
+
+
     //HEADER SEARCH INPUT
-    let header__inputIsOpened = false; 
+    let header__inputIsOpened = false;
     li__iconSearch.addEventListener('click', function(){
     if(header__inputIsOpened === false){
          $(".nav__line--first").addClass('closed');
@@ -61,9 +61,9 @@ $(document).ready(function() {
          setTimeout(function(){
            $(".nav__line--first").delay(1000).removeClass('closed');
          },300)
-     }  
+     }
 });
-    
+
        //SOCIAL DIVS COUNTERS
        const fbCounter = document.querySelector('.social__span--counter--fb');
         let fbCount = 0;
@@ -78,12 +78,12 @@ $(document).ready(function() {
 
     }, 10);
 
-       
+
        const twitterCounter = document.querySelector('.social__span--counter--twitter');
        twitterCounter.addEventListener('click', function(){
-         console.log("twitter counter"); 
-       }); 
-    
+         console.log("twitter counter");
+       });
+
         let twitterCount = 0;
         window.setInterval(function(){
         if(twitterCount>=89){
@@ -95,7 +95,7 @@ $(document).ready(function() {
             }
 
     }, 10);
-    
 
-    
+
+
 });
