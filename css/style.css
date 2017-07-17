@@ -186,12 +186,12 @@ a {
 
 /*MOBILE NAV*/
 .nav--mobile {
-  float: auto;
   width: 100%;
   height: 270px;
   margin: 10px 0 10px 0;
   background-color: #FFFFFF;
   display: none;
+  padding-top: 40px;
 }
 
 .nav--mobile__ul {
@@ -203,14 +203,8 @@ a {
   border-top: 1px solid #56CCC8;
   border-bottom: 1px solid #56CCC8;
   width: 100%;
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   text-align: center;
-  padding: 5px;
-}
-
-.nav--mobile__li:first-child {
-  margin-top: 20px;
 }
 
 .nav--mobile__li__a {
@@ -280,4 +274,236 @@ a {
   bottom: 12px;
   right: 10px;
   cursor: pointer;
+}
+
+.newsletter {
+  float: right;
+  width: 50%;
+  height: 170px;
+  margin: 10px 0 0 0;
+  background-color: #FFFFFF;
+  color: #475055;
+  font-family: "Roboto", sans-serif;
+}
+
+.newsletter__h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsletter__p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsletter {
+  float: right;
+  width: 450px;
+  height: 165px;
+  margin: 10px 0 0 0;
+  background-color: #FFFFFF;
+}
+
+.newsletter__h3 {
+  margin-top: 30px;
+  font-size: 2.4rem;
+}
+
+.newsletter__p {
+  font-size: 1.2rem;
+  margin: 16px auto 16px auto;
+}
+
+.newsletter__form {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.input--email {
+  width: 60%;
+  border: 1px solid #B2B9BD;
+  font-size: 1.5rem;
+  padding: 3%;
+  color: #B2B9BD;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.button--signup {
+  width: 100px;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 5%;
+  background-color: #EA6060;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+.divSocialList {
+  float: right;
+  margin-top: 20px;
+  width: 220px;
+  height: 315px;
+  background-color: #FFFFFF;
+}
+
+.divSocialList__ul {
+  margin-top: 35px;
+  list-style-type: none;
+}
+
+.divSocialList__li {
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
+
+.divSocialList__circle {
+  display: inline;
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+}
+
+.divSocialList__i {
+  font-size: 4rem;
+  color: blue;
+}
+
+.divSocialList__span {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: #475055;
+  position: relative;
+  bottom: 10px;
+  left: 25px;
+}
+
+.icon-circle {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  margin: 0px;
+  padding: 0;
+  background-color: #c5cdd1;
+}
+
+.iconproperties {
+  position: absolute;
+  top: 23%;
+  left: 30%;
+  font-size: 1.5rem;
+  padding: 0;
+  width: 0px;
+  height: 0px;
+  color: #FFFFFF;
+}
+
+.icon--facebook {
+  left: 40%;
+  font-size: 1.6rem;
+}
+
+.firsticonhover {
+  position: absolute;
+  cursor: pointer;
+  width: 30px;
+  height: 32px;
+  z-index: 9999;
+}
+
+.icon-circle:hover {
+  background-color: #4D6BAA;
+}
+
+.hover__facebook:hover {
+  background-color: #4D6BAA;
+}
+
+.hover__twitter:hover {
+  background-color: #4FC6F8;
+}
+
+.hover__googleplus:hover {
+  background-color: #D34836;
+}
+
+.hover__twitter:hover {
+  background-color: #4FC6F8;
+}
+
+.hover__rss:hover {
+  background-color: #FF9900;
+}
+
+.hover__pinterest:hover {
+  background-color: #CB2028;
+}
+
+.contact {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 225px;
+  height: 250px;
+  background-color: #B2B9BD;
+  color: #FFFFFF;
+}
+
+.contact__left {
+  float: left;
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  padding: 0px;
+}
+
+.contact__right {
+  float: right;
+  display: inline-block;
+  width: 79%;
+  height: 100%;
+}
+
+.contact__right:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contact__right__article {
+  margin-top: 36px;
+  margin-left: 25px;
+}
+
+.contact__icon {
+  display: block;
+  font-size: 4rem;
+  padding: 0px;
+  margin-top: 30px;
+  margin-left: 17px;
 }

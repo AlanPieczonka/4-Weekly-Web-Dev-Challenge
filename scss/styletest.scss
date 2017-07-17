@@ -144,12 +144,12 @@
 
 /*MOBILE NAV*/
 .nav--mobile{
-  float:auto;
   width: 100%;
   height: 270px;
   margin: 10px 0 10px 0;
   background-color: $white;
   display: none;
+  padding-top: 40px;
   &__ul{
     margin: 0;
   }
@@ -158,13 +158,8 @@
     border-top: 1px solid #56CCC8;
     border-bottom: 1px solid #56CCC8;
     width: 100%;
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
     text-align: center;
-    padding: 5px;
-    &:first-child{
-      margin-top: 20px;
-    }
     &__a{
       color: $lightGrey;
     }
@@ -227,3 +222,213 @@
       }
     }
 }
+
+.newsletter{
+  float: right;
+  width: 50%;
+  height: 170px;
+  margin: 10px 0 0 0;
+  background-color: $white;
+  color: #475055;
+  font-family: $font--main;
+  &__p{
+    font-size: 1.6rem;
+    font-weight: $font-light;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.h3{
+    font-size: 2.4rem;
+    font-weight: $font-light;
+    margin: 30px auto auto auto;
+    text-align: center;
+}
+
+.newsletter{
+  float: right;
+  width: 450px;
+  height: 165px;
+  margin: 10px 0 0 0;
+  background-color: $white;
+  color: #475055;
+  font-family: $font-main;
+  &__p{
+    font-size: 1.2rem;
+    margin: 16px auto 16px auto;
+  }
+  &__form{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.input--email{
+  width: 60%;
+  border: 1px solid $grey;
+  font-size: 1.5rem;
+  padding: 3%;
+  color: $grey;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.button--signup{
+  width: 100px;
+  height: 45px;
+  font-family: $font--main;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 5%;
+  background-color: $red;
+  color: $white;
+  font-size: 1.6rem;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+.divSocialList{
+  float: right;
+  margin-top: 20px;
+  width: 220px;
+  height: 315px;
+  background-color: $white;
+
+  &__ul{
+    margin-top: 35px;
+    list-style-type: none;
+  }
+
+  &__li{
+    margin-bottom: 20px;
+    margin-left: 25px;
+  }
+
+  &__circle{
+    display: inline;
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+  }
+
+  &__i{
+    font-size: 4rem;
+    color: blue;
+  }
+    &__span{
+      font-size: 1.6rem;
+      font-family: $font--main;
+      color: #475055;
+        position: relative;
+        bottom: 10px;
+        left: 25px;
+    }
+
+}
+.icon-circle{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    margin: 0px;
+    padding: 0;
+    background-color: #c5cdd1;
+}
+
+.iconproperties{
+    position: absolute;
+    top: 23%;
+    left: 30%;
+    font-size: 1.5rem;
+    padding: 0;
+    width: 0px;
+    height: 0px;
+    color: $white;
+}
+
+.icon--facebook{
+    left: 40%;
+    font-size: 1.6rem;
+}
+
+
+.firsticonhover{
+    position: absolute;
+    cursor: pointer;
+    width: 30px;
+    height: 32px;
+    z-index: 9999;
+}
+
+.icon-circle:hover{
+  background-color: $fb;
+}
+
+.hover{
+    &__facebook:hover{
+        background-color: $fb;
+    }
+    &__twitter:hover{
+        background-color: $twitter;
+    }
+    &__googleplus:hover{
+        background-color: $gplus;
+    }
+    &__twitter:hover{
+        background-color: $twitter;
+    }
+    &__rss:hover{
+        background-color: #FF9900;
+    }
+    &__pinterest:hover{
+        background-color: #CB2028;
+    }
+    
+}
+
+.contact{
+    font-family: $font--main;
+    font-size: 1.4rem;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 225px;
+    height: 250px; 
+    background-color: $grey;
+    color: $white;
+    &__left{
+        float: left;
+        display: inline-block;
+        width: 20%;
+        height: 100%;
+        padding: 0px;
+    }
+    &__right{
+        float: right;
+        display: inline-block;
+        width: 79%;
+        height: 100%;
+        @include clearFix;
+        &__article{
+            margin-top: 36px;
+            margin-left: 25px;
+        }
+    }
+    &__icon{
+        display: block;
+        font-size: 4rem;
+        padding: 0px;
+        margin-top: 30px;
+        margin-left: 17px;
+    }
+}
+
+
+
