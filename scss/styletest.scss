@@ -246,14 +246,17 @@
     text-align: center;
 }
 
-.newsletter{
+.connect{ //sign in and newsletter div
   float: right;
   width: 450px;
   height: 165px;
   margin: 10px 0 0 0;
   background-color: $white;
   color: #475055;
-  font-family: $font-main;
+  font-family: $font--main;
+}
+
+.newsletter{
   &__p{
     font-size: 1.2rem;
     margin: 16px auto 16px auto;
@@ -340,7 +343,25 @@
     margin: 0px;
     padding: 0;
     background-color: #c5cdd1;
+    &-facebook{
+      background-color: $fb;
+      cursor: pointer;
+    }
+    &-twitter{
+      background-color: $twitter;
+      cursor: pointer;
+    }
+    &-googleplus{
+      background-color: $gplus;
+      cursor: pointer;
+    }
+    &-linkedin{
+      background-color: $linkedin;
+      cursor: pointer;
+    }
 }
+
+
 
 .iconproperties{
     position: absolute;
@@ -353,9 +374,18 @@
     color: $white;
 }
 
-.icon--facebook{
+.iconproperties--signin{
+  color: $fb;
+}
+
+.icon--facebook--fix{
     left: 40%;
     font-size: 1.6rem;
+}
+
+.icon--linkedin--fix{
+  right: 30%;
+  font-size: 1.6rem;
 }
 
 
@@ -367,13 +397,11 @@
     z-index: 9999;
 }
 
-.icon-circle:hover{
-  background-color: $fb;
-}
+
 
 .hover{
     &__facebook:hover{
-        background-color: $fb;
+      background-color: $fb;
     }
     &__twitter:hover{
         background-color: $twitter;
@@ -390,7 +418,21 @@
     &__pinterest:hover{
         background-color: #CB2028;
     }
-    
+    &__linkedin:hover{
+      background-color: $linkedin;
+    }
+}
+
+.sign-in{
+  &__icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icon{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
 
 .contact{
@@ -400,7 +442,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     width: 225px;
-    height: 250px; 
+    height: 250px;
     background-color: $grey;
     color: $white;
     &__left{
@@ -430,5 +472,89 @@
     }
 }
 
+.slider{
+  background: no-repeat center center;
+  background-image: url(img/jimroot2.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  width: 100%;
+  height: 455px;
+  margin-bottom: 20px;
+  position: relative;
+  font-family: $font--main;
+  color: $white;
+  &__h4{
+    font-size: 4.6rem;
+    font-weight: $font-light;
+    position: absolute;
+    top: 45px;
+    left: 60px;
+  }
+  &__p{
+    font-weight: 100;
+    font-size: 1.4rem;
+    max-width: 35%;
+    position: absolute;
+    top: 110px;
+    left: 60px;
+  }
+  &__button{
+    cursor: pointer;
+    border: 0px;
+    width: 35px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    border-radius: 7%;
+    &--left{
+      left: 0px;
+      top: 50%;
+      &::after{
+        content: '';
+        color: black;
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+    }
+    &--right{
+      right: 0px;
+      top: 50%;
+      &::after{
+        content: '';
+        color: $black;
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+    }
+  }
+  &__indicators{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+  }
+}
 
-
+.i--indicator{
+  width: 12.5px;
+  height: 12.5px;
+  border-radius: 50%;
+  margin-left: 5px;
+  border: 1px pink solid;
+  cursor: pointer;
+  &:hover{
+    background-color: $white;
+  }
+}

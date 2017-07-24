@@ -229,7 +229,7 @@ a {
 }
 
 .social__span {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-size: 1.6rem;
   color: #FFFFFF;
   position: absolute;
@@ -283,14 +283,7 @@ a {
   margin: 10px 0 0 0;
   background-color: #FFFFFF;
   color: #475055;
-  font-family: "Roboto", sans-serif;
-}
-
-.newsletter__h3 {
-  font-size: 3rem;
-  font-weight: 300;
-  margin: 0 auto;
-  text-align: center;
+  font-family: "Roboto";
 }
 
 .newsletter__p {
@@ -300,17 +293,21 @@ a {
   text-align: center;
 }
 
-.newsletter {
+.h3 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  margin: 30px auto auto auto;
+  text-align: center;
+}
+
+.connect {
   float: right;
   width: 450px;
   height: 165px;
   margin: 10px 0 0 0;
   background-color: #FFFFFF;
-}
-
-.newsletter__h3 {
-  margin-top: 30px;
-  font-size: 2.4rem;
+  color: #475055;
+  font-family: "Roboto";
 }
 
 .newsletter__p {
@@ -348,7 +345,7 @@ a {
 .button--signup {
   width: 100px;
   height: 45px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   text-transform: uppercase;
   border: 0;
   border-radius: 5%;
@@ -391,7 +388,7 @@ a {
 
 .divSocialList__span {
   font-size: 1.6rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   color: #475055;
   position: relative;
   bottom: 10px;
@@ -410,6 +407,26 @@ a {
   background-color: #c5cdd1;
 }
 
+.icon-circle-facebook {
+  background-color: #4D6BAA;
+  cursor: pointer;
+}
+
+.icon-circle-twitter {
+  background-color: #4FC6F8;
+  cursor: pointer;
+}
+
+.icon-circle-googleplus {
+  background-color: #D34836;
+  cursor: pointer;
+}
+
+.icon-circle-linkedin {
+  background-color: #238CC8;
+  cursor: pointer;
+}
+
 .iconproperties {
   position: absolute;
   top: 23%;
@@ -421,8 +438,17 @@ a {
   color: #FFFFFF;
 }
 
-.icon--facebook {
+.iconproperties--signin {
+  color: #4D6BAA;
+}
+
+.icon--facebook--fix {
   left: 40%;
+  font-size: 1.6rem;
+}
+
+.icon--linkedin--fix {
+  right: 30%;
   font-size: 1.6rem;
 }
 
@@ -432,10 +458,6 @@ a {
   width: 30px;
   height: 32px;
   z-index: 9999;
-}
-
-.icon-circle:hover {
-  background-color: #4D6BAA;
 }
 
 .hover__facebook:hover {
@@ -462,8 +484,32 @@ a {
   background-color: #CB2028;
 }
 
+.hover__linkedin:hover {
+  background-color: #238CC8;
+}
+
+.sign-in__icons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.sign-in__icon {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 .contact {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-size: 1.4rem;
   float: right;
   margin-top: 20px;
@@ -506,4 +552,112 @@ a {
   padding: 0px;
   margin-top: 30px;
   margin-left: 17px;
+}
+
+.slider {
+  background: no-repeat center center;
+  background-image: url(img/jimroot2.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 455px;
+  margin-bottom: 20px;
+  position: relative;
+  font-family: "Roboto";
+  color: #FFFFFF;
+}
+
+.slider__h4 {
+  font-size: 4.6rem;
+  font-weight: 300;
+  position: absolute;
+  top: 45px;
+  left: 60px;
+}
+
+.slider__p {
+  font-weight: 100;
+  font-size: 1.4rem;
+  max-width: 35%;
+  position: absolute;
+  top: 110px;
+  left: 60px;
+}
+
+.slider__button {
+  cursor: pointer;
+  border: 0px;
+  width: 35px;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  border-radius: 7%;
+}
+
+.slider__button--left {
+  left: 0px;
+  top: 50%;
+}
+
+.slider__button--left::after {
+  content: '';
+  color: black;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.slider__button--right {
+  right: 0px;
+  top: 50%;
+}
+
+.slider__button--right::after {
+  content: '';
+  color: #000000;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.slider__indicators {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.i--indicator {
+  width: 12.5px;
+  height: 12.5px;
+  border-radius: 50%;
+  margin-left: 5px;
+  border: 1px pink solid;
+  cursor: pointer;
+}
+
+.i--indicator:hover {
+  background-color: #FFFFFF;
 }
