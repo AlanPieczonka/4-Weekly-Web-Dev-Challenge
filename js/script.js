@@ -96,6 +96,92 @@ $(document).ready(function() {
 
     }, 10);
 
+    //Slider
+
+    const slider = document.querySelector('.slider');
+
+
+    let currentImage = 1;
+
+    const sliderButtonLeft = document.querySelector('.slider__button--left');
+    const sliderButtonRight = document.querySelector('.slider__button--right');
+
+    sliderButtonLeft.addEventListener('click', function(){
+      if(currentImage === 1){
+        currentImage = 4;
+      }else{
+        currentImage--;
+      }
+      slider.style.backgroundImage = `url(./css/img/jimroot${currentImage}.jpg)`;
+      changeIndicatorBackground(currentImage);
+    });
+
+    sliderButtonRight.addEventListener('click', function(){
+      if(currentImage === 4){
+        currentImage = 1;
+      }else{
+        currentImage++;
+      }
+      slider.style.backgroundImage = `url(./css/img/jimroot${currentImage}.jpg)`;
+      changeIndicatorBackground(currentImage);
+    });
+
+
+        const indicatorFirst = document.querySelector('.i--indicator--first');
+        const indicatorSecond = document.querySelector('.i--indicator--second');
+        const indicatorThird = document.querySelector('.i--indicator--third');
+        const indicatorFourth = document.querySelector('.i--indicator--fourth');
+
+        function resetIndicatorsColor(){
+          indicatorFirst.style.backgroundColor = "";
+          indicatorSecond.style.backgroundColor = "";
+          indicatorThird.style.backgroundColor = "";
+          indicatorFourth.style.backgroundColor = "";
+        }
+
+        indicatorFirst.addEventListener('click', function(){
+          slider.style.backgroundImage = `url(./css/img/jimroot${1}.jpg)`;
+          currentImage = 1;
+          resetIndicatorsColor();
+          changeIndicatorBackground(1);
+        });
+
+        indicatorSecond.addEventListener('click', function() {
+          slider.style.backgroundImage = `url(./css/img/jimroot${2}.jpg)`;
+          currentImage = 2;
+          resetIndicatorsColor();
+          this.style.backgroundColor = "white";
+          changeIndicatorBackground(2);
+        });
+
+        indicatorThird.addEventListener('click', function() {
+          slider.style.backgroundImage = `url(./css/img/jimroot${3}.jpg)`;
+          currentImage = 3;
+          resetIndicatorsColor();
+          changeIndicatorBackground(3);
+        });
+
+        indicatorFourth.addEventListener('click', function() {
+          currentImage = 4;
+          slider.style.backgroundImage = `url(./css/img/jimroot${4}.jpg)`;
+          resetIndicatorsColor();
+          changeIndicatorBackground(4);
+        });
+
+        function changeIndicatorBackground(which){
+          resetIndicatorsColor();
+          if(which === 1){
+            indicatorFirst.style.backgroundColor = "white";
+          }else if(which === 2){
+            indicatorSecond.style.backgroundColor = "white";
+          }else if(which === 3){
+            indicatorThird.style.backgroundColor = "white";
+          }else if(which === 4){
+            indicatorFourth.style.backgroundColor = "white";
+          }
+        }
+
+        changeIndicatorBackground(1);
 
 
 });

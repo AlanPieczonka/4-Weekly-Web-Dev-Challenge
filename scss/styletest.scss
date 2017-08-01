@@ -474,7 +474,7 @@
 
 .slider{
   background: no-repeat center center;
-  background-image: url(img/jimroot2.jpg);
+  background-image: url(img/jimroot1.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -484,6 +484,7 @@
   position: relative;
   font-family: $font--main;
   color: $white;
+  transition: background-image 500ms linear;
   &__h4{
     font-size: 4.6rem;
     font-weight: $font-light;
