@@ -132,40 +132,22 @@ $(document).ready(function() {
         const indicatorThird = document.querySelector('.i--indicator--third');
         const indicatorFourth = document.querySelector('.i--indicator--fourth');
 
+        const indicators = [indicatorFirst, indicatorSecond, indicatorThird, indicatorFourth];
+
         function resetIndicatorsColor(){
-          indicatorFirst.style.backgroundColor = "";
-          indicatorSecond.style.backgroundColor = "";
-          indicatorThird.style.backgroundColor = "";
-          indicatorFourth.style.backgroundColor = "";
+          indicators.forEach((indicator) => {
+              indicator.style.backgroundColor = "";
+          });
         }
 
-        indicatorFirst.addEventListener('click', function(){
-          slider.style.backgroundImage = `url(./css/img/jimroot${1}.jpg)`;
-          currentImage = 1;
-          resetIndicatorsColor();
-          changeIndicatorBackground(1);
-        });
-
-        indicatorSecond.addEventListener('click', function() {
-          slider.style.backgroundImage = `url(./css/img/jimroot${2}.jpg)`;
-          currentImage = 2;
-          resetIndicatorsColor();
-          this.style.backgroundColor = "white";
-          changeIndicatorBackground(2);
-        });
-
-        indicatorThird.addEventListener('click', function() {
-          slider.style.backgroundImage = `url(./css/img/jimroot${3}.jpg)`;
-          currentImage = 3;
-          resetIndicatorsColor();
-          changeIndicatorBackground(3);
-        });
-
-        indicatorFourth.addEventListener('click', function() {
-          currentImage = 4;
-          slider.style.backgroundImage = `url(./css/img/jimroot${4}.jpg)`;
-          resetIndicatorsColor();
-          changeIndicatorBackground(4);
+        indicators.forEach((indicator, index) => {
+          indicator.addEventListener('click', () => {
+            const currentNumber = index + 1;
+            slider.style.backgroundImage = `url(./css/img/jimroot${currentNumber}.jpg)`;
+            currentImage = currentNumber;
+            resetIndicatorsColor();
+            changeIndicatorBackground(currentNumber);
+          });
         });
 
         function changeIndicatorBackground(which){
