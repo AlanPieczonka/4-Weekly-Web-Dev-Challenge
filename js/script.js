@@ -100,7 +100,6 @@ $(document).ready(function() {
 
     const slider = document.querySelector('.slider');
 
-
     let currentImage = 1;
 
     const sliderButtonLeft = document.querySelector('.slider__button--left');
@@ -134,11 +133,7 @@ $(document).ready(function() {
 
         const indicators = [indicatorFirst, indicatorSecond, indicatorThird, indicatorFourth];
 
-        function resetIndicatorsColor(){
-          indicators.forEach((indicator) => {
-              indicator.style.backgroundColor = "";
-          });
-        }
+
 
         indicators.forEach((indicator, index) => {
           indicator.addEventListener('click', () => {
@@ -150,7 +145,13 @@ $(document).ready(function() {
           });
         });
 
-        function changeIndicatorBackground(which){
+        const resetIndicatorsColor = () =>{
+          indicators.forEach((indicator) => {
+              indicator.style.backgroundColor = "";
+          });
+        }
+
+        const changeIndicatorBackground = (which) => {
           resetIndicatorsColor();
           switch (which) {
              case 1: indicatorFirst.style.backgroundColor = "white";
@@ -162,9 +163,8 @@ $(document).ready(function() {
              case 4: indicatorFourth.style.backgroundColor = "white";
                 break;
           }
-        }
+        };
 
         changeIndicatorBackground(1);
-
 
 });
