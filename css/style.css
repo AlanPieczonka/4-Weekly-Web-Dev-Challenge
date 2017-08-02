@@ -556,7 +556,7 @@ a {
 
 .slider {
   background: no-repeat center center;
-  background-image: url(img/jimroot2.jpg);
+  background-image: url(img/jimroot1.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -567,6 +567,9 @@ a {
   position: relative;
   font-family: "Roboto";
   color: #FFFFFF;
+  -webkit-transition: background-image 500ms linear;
+  -o-transition: background-image 500ms linear;
+  transition: background-image 500ms linear;
 }
 
 .slider__h4 {

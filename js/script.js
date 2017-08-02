@@ -96,6 +96,75 @@ $(document).ready(function() {
 
     }, 10);
 
+    //Slider
 
+    const slider = document.querySelector('.slider');
+
+    let currentImage = 1;
+
+    const sliderButtonLeft = document.querySelector('.slider__button--left');
+    const sliderButtonRight = document.querySelector('.slider__button--right');
+
+    sliderButtonLeft.addEventListener('click', function(){
+      if(currentImage === 1){
+        currentImage = 4;
+      }else{
+        currentImage--;
+      }
+      slider.style.backgroundImage = `url(./css/img/jimroot${currentImage}.jpg)`;
+      changeIndicatorBackground(currentImage);
+    });
+
+    sliderButtonRight.addEventListener('click', function(){
+      if(currentImage === 4){
+        currentImage = 1;
+      }else{
+        currentImage++;
+      }
+      slider.style.backgroundImage = `url(./css/img/jimroot${currentImage}.jpg)`;
+      changeIndicatorBackground(currentImage);
+    });
+
+
+        const indicatorFirst = document.querySelector('.i--indicator--first');
+        const indicatorSecond = document.querySelector('.i--indicator--second');
+        const indicatorThird = document.querySelector('.i--indicator--third');
+        const indicatorFourth = document.querySelector('.i--indicator--fourth');
+
+        const indicators = [indicatorFirst, indicatorSecond, indicatorThird, indicatorFourth];
+
+
+
+        indicators.forEach((indicator, index) => {
+          indicator.addEventListener('click', () => {
+            const currentNumber = index + 1;
+            slider.style.backgroundImage = `url(./css/img/jimroot${currentNumber}.jpg)`;
+            currentImage = currentNumber;
+            resetIndicatorsColor();
+            changeIndicatorBackground(currentNumber);
+          });
+        });
+
+        const resetIndicatorsColor = () =>{
+          indicators.forEach((indicator) => {
+              indicator.style.backgroundColor = "";
+          });
+        }
+
+        const changeIndicatorBackground = (which) => {
+          resetIndicatorsColor();
+          switch (which) {
+             case 1: indicatorFirst.style.backgroundColor = "white";
+                break;
+             case 2: indicatorSecond.style.backgroundColor = "white";
+                break;
+             case 3: indicatorThird.style.backgroundColor = "white";
+                break;
+             case 4: indicatorFourth.style.backgroundColor = "white";
+                break;
+          }
+        };
+
+        changeIndicatorBackground(1);
 
 });
