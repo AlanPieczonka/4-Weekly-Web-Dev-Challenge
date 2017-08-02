@@ -170,14 +170,15 @@ $(document).ready(function() {
 
         function changeIndicatorBackground(which){
           resetIndicatorsColor();
-          if(which === 1){
-            indicatorFirst.style.backgroundColor = "white";
-          }else if(which === 2){
-            indicatorSecond.style.backgroundColor = "white";
-          }else if(which === 3){
-            indicatorThird.style.backgroundColor = "white";
-          }else if(which === 4){
-            indicatorFourth.style.backgroundColor = "white";
+          switch (which) {
+             case 1: indicatorFirst.style.backgroundColor = "white";
+                break;
+             case 2: indicatorSecond.style.backgroundColor = "white";
+                break;
+             case 3: indicatorThird.style.backgroundColor = "white";
+                break;
+             case 4: indicatorFourth.style.backgroundColor = "white";
+                break;
           }
         }
 
