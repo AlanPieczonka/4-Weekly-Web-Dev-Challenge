@@ -2,22 +2,21 @@
 <html lang="en">
 <head>
 
-		<meta charset="utf-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"> <!--always scale with the scale of 1-->
         <meta name="description" content="tags,tagi">
 
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/grid.css">
         <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/queries.css">
-	   <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+               <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
 
-	<title>4 Weekly Web Dev</title>
+    <title>Tytuł</title>
 </head>
 <body>
 
-    <div class="row">
+        <div class="row">
         <header class="header">
             <button class="header__hamburger">
                <i class="ion-navicon-round header__hamburger__icon header__hamburger__icon--open"></i>
@@ -26,7 +25,7 @@
             </button>
             <nav class="nav nav--desktop">
                 <div class="nav__div nav__div--list">
-                    <ul class="ul">
+                    <ul class="ul"> 
                         <li class="li"><a>Home</a></li>
                         <li class="li"><a>Store</a></li>
                         <li class="li"><a>Blog</a></li>
@@ -38,10 +37,10 @@
                     <ul class="nav__div--icons__ul">
                         <li class="li li--icon--search relative nav__line nav__line--first"><a href="#"><i class="ion-ios-search-strong nav__icons--social nav__icons--social--search"></i></a></li>
                         <input class="header__input" type="search" placeholder="Search &period; &period; &period;" >
-                        <li class="li"><a href="https://facebook.com" target="_blank"><i class="ion-social-facebook nav__icons--social nav__icons--social--fb"></i></a></li>
-                        <li class="li li--icons"><a href="https://twitter.com" target="_blank"><i class="ion-social-twitter nav__icons--social nav__icons--social--twitter"></i></a></li>
-                        <li class="li li--icons relative nav__line"><a href="https://plus.google.com" target="_blank"><i class="ion-social-googleplus-outline nav__icons--social nav__icons--social--gplus"></i></a></li>
-                        <li class="li"><a href="#"><i class="ion-ios-person nav__icons--social nav__icons--social--user"></i></a></li>
+                        <li class="li li--hiddenonmobile"><a href="https://facebook.com" target="_blank"><i class="ion-social-facebook nav__icons--social nav__icons--social--fb"></i></a></li>
+                        <li class="li li--icons li--hiddenonmobile"><a href="https://twitter.com" target="_blank"><i class="ion-social-twitter nav__icons--social nav__icons--social--twitter"></i></a></li>
+                        <li class="li li--icons relative nav__line li--hiddenonmobile"><a href="https://plus.google.com" target="_blank"><i class="ion-social-googleplus-outline nav__icons--social nav__icons--social--gplus"></i></a></li>
+                        <li class="li"><a href="#"><i class="ion-ios-person nav__icons--social nav__icons--social--user li--hiddenonmobile"></i></a></li>
                     </ul>
                 </div>
             </nav>
@@ -60,149 +59,240 @@
         </nav>
     </div>
 
-		<div class="row">
-			<div class="divSocialList">
-				<ul class="divSocialList__ul">
-					<li class="divSocialList__li">
+<div class="container">
+
+        <div class="menuandcontact">
+            <div class="menu">
+                    <ul class="menu__ul">
+                                <li class="menu__li">
+                                    <div class="menu__div">
+                                       <a href="#"> <i class="ion-home menu__icon"></i>Home</a>
+                                    </div>
+                                </li>
+                                <li class="menu__li">
+                                    <div class="menu__div">
+                                       <a href="#"> <i class="ion-ios-cart menu__icon"></i>Store</a>
+                                    </div>
+                                </li>
+                                <li class="menu__li">
+                                    <div class="menu__div">
+                                        <a href="#"><i class="ion-edit menu__icon"></i>Blog</a>
+                                    </div>
+                                </li>
+                                <li class="menu__li">
+                                    <div class="menu__div">
+                                         <a href="#"><i class="ion-ios-people menu__icon"></i>Community</a>
+                                    </div>
+                                </li>
+                                <li class="menu__li">
+                                    <div class="menu__div">
+                                        <a href="#"><i class="ion-trophy menu__icon"></i>Contests</a>
+                                    </div>
+                                </li>
+                                <li class="menu__li">
+                                    <div class="menu__div">
+                                      <a href="#"><i class="ion-ios-information menu__icon"></i>About</a>
+                                    </div>
+                                </li>
+                                <li class="menu__li">
+                                    <div class="menu__div menu__div--specialfix">
+                                        <a href="#"><i class="ion-ios-email menu__icon"></i>Contact</a>
+                                    </div>
+                                </li>
+                    </ul>
+            </div>
+            <div class="contact">
+                <ul class="contact__ul">
+                    <li class="contact__li">
+                                <i class="ion-ios-telephone contact__icon"></i>
+                                <article class="contact--article">(912) 555-1234 <br> (912) 555-5678</article>
+                    </li>
+                    <li class="contact__li">
+                        <i class="ion-ios-location contact__icon"></i>
+                        <article class="contact--article"><adress class="contact__adress">1600 Pennsylvania <br> Ave NW. Washington <br> DC 20500, USA</adress></article>
+                    </li>
+                    <li class="contact__li">
+                        <i class="ion-ios-email contact__icon"></i>
+                        <article class="contact--article"><adress>hello@website.com <br>office@website.com</adress></article>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="blog--container">
+            <div class="blog__elem">
+                <h2 class="h2 blog__h2">Tech</h2>
+                <ul class="blog__ul">
+                    <li class="blog__li"><a href="#">Software &amp; Apps</a></li>
+                    <li class="blog__li"><a href="#">Gadgets</a></li>
+                    <li class="blog__li"><a href="#">Mobile</a></li>
+                </ul>
+                <button type="button" class="blog__button"></button>
+            </div>
+            <div class="blog__elem blog__elem--lightblue">
+                <h2 class="h2 blog__h2">Entertainment</h2>
+                <ul class="blog__ul blog__ul--long">
+                    <li class="blog__li blog__li--long"><a href="#">Film</a></li>
+                    <li class="blog__li blog__li--long"><a href="#">Gaming</a></li>
+                    <li class="blog__li blog__li--long"><a href="#">Music</a></li>
+                    <li class="blog__li blog__li--long"><a href="#">Sport</a></li>
+                </ul>
+                <button type="button" class="blog__button"></button>
+            </div>
+            <div class="blog__elem">
+             <h2 class="h2 blog__h2">Business</h2>
+                <ul class="blog__ul">
+                    <li class="blog__li"><a href="#">Jobs</a></li>
+                    <li class="blog__li"><a href="#">Marketing</a></li>
+                    <li class="blog__li"><a href="#">Media</a></li>
+                </ul>
+                <button type="button" class="blog__button"></button>
+            </div>
+            <div class="blog__elem">
+                <h2 class="h2 blog__h2">Lifestyle</h2>
+                <ul class="blog__ul">
+                    <li class="blog__li"><a href="#">Home</a></li>
+                    <li class="blog__li"><a href="#">Health &amp; Fitness</a></li>
+                    <li class="blog__li"><a href="#">Travel &amp; Leisure</a></li>
+                </ul>
+                <button type="button" class="blog__button"></button>
+            </div>
+        </div>
+
+
+        <div class="divSocialList">
+                <ul class="divSocialList__ul">
+                    <li class="divSocialList__li">
                         <a href="http://www.facebook.com" target="_blank">
                             <div class="icon-circle hover__facebook ">
                                 <span class="firsticonhover"></span>
                                 <i class="ion-social-facebook iconproperties icon--facebook--fix srest"></i>
                             </div>
-				                <span class="divSocialList__span">Facebook</span>
-				        </a>
-				    </li>
-					<li class="divSocialList__li">
+                                <span class="divSocialList__span">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="divSocialList__li">
                         <a href="http://www.twitter.com" target="_blank">
                             <div class="icon-circle hover__twitter ">
                                 <span class="firsticonhover"></span>
                                 <i class="ion-social-twitter iconproperties srest"></i>
                             </div>
-				                <span class="divSocialList__span">Twitter</span>
-				        </a>
-				    </li>
-					<li class="divSocialList__li">
+                                <span class="divSocialList__span">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="divSocialList__li">
                         <a href="http://googleplus.com" target="_blank">
                             <div class="icon-circle hover__googleplus ">
                                 <span class="firsticonhover"></span>
                                 <i class="ion-social-googleplus iconproperties srest"></i>
                             </div>
-				                <span class="divSocialList__span">Google &#43;</span>
-				        </a>
-				    </li>
-					<li class="divSocialList__li">
+                                <span class="divSocialList__span">Google &#43;</span>
+                        </a>
+                    </li>
+                    <li class="divSocialList__li">
                         <a href="https://en.wikipedia.org/wiki/RSS" target="_blank">
                             <div class="icon-circle hover__rss">
                                 <span class="firsticonhover"></span>
                                 <i class="ion-social-rss iconproperties srest"></i>
                             </div>
-				                <span class="divSocialList__span">Rss Feeds</span>
-				        </a>
-				    </li>
-					<li class="divSocialList__li">
+                                <span class="divSocialList__span">Rss Feeds</span>
+                        </a>
+                    </li>
+                    <li class="divSocialList__li">
                         <a href="http://www.pinterest.com">
                             <div class="icon-circle hover__pinterest">
                                 <span class="firsticonhover"></span>
                                 <i class="ion-social-pinterest iconproperties srest"></i>
                             </div>
-				                <span class="divSocialList__span">Pinterest</span>
-				        </a>
-				    </li>
-				</ul>
-		</div>
-		</div>
-    <div class="row">
+                                <span class="divSocialList__span">Pinterest</span>
+                        </a>
+                    </li>
+                </ul>
+        </div>
+
+
+
         <div class="social social--fb">
                 <i class="ion-social-facebook social__icon social__icon social__icon--fb"></i>
                 <span class="social__span social__span--counter social__span--counter--fb">0K</span>
                 <span class="social__span social__span--follow">Follow</span>
                 <i class="ion-android-add-circle social__icon social__icon--addchecked"></i>
         </div>
-    </div>
 
-    <div class="row">
         <div class="social social--twitter">
                 <i class="ion-social-twitter social__icon social__icon social__icon--twitter"></i>
                 <span class="social__span social__span--counter social__span--counter--twitter">89k</span>
                 <span class="social__span social__span--following">Following</span>
                 <i class="ion-ios-checkmark social__icon social__icon--addchecked"></i>
         </div>
-    </div>
 
-		<div class="row">
-				<div class="connect">
-					<h3 class="h3 newsletter__h3">Join the Newsletter</h3>
-					<p class="newsletter__p">Sign up for our personalized newsletter</p>
-					<form class="newsletter__form">
-					<input type="email" class="input--email" placeholder="Enter email adress ...">
-					<button class="button button--signup">Sign Up</button>
-				</form>
-				</div>
-		</div>
-
-       <div class="row">
-               <div class="connect sign-in">
-                   <h3 class="h3 newsletter__h3">Sign In</h3>
-				   <p class="newsletter__p">Just select your favorite social network to get started</p>
+        <div class="connect connect--signin">
+             <h3 class="h3 newsletter__h3">Sign In</h3>
+                   <p class="newsletter__p newsletter__p--signin">Just select your favorite social network to get started</p>
                    <div class="sign-in__icons">
-										<a href="http://facebook.com" target="_blank">
-										 <div class="sign-in__icon icon-circle icon-circle-facebook">
-												 <i class="ion-social-facebook iconproperties icon--facebook--fix"></i>
-										 </div>
-									 </a>
-									 <a href="http://twitter.com" target="_blank">
-											<div class="sign-in__icon icon-circle icon-circle-twitter">
-													 <i class="ion-social-twitter iconproperties"></i>
-											 </div>
-									</a>
-									<a href="http://googleplus.com" target="_blank">
-											 <div class="sign-in__icon icon-circle icon-circle-googleplus">
-													 <i class="ion-social-googleplus iconproperties"></i>
-												</div>
-									</a>
-									<a href="http://linkedin.com" target="_blank">
-											 <div class="sign-in__icon icon-circle icon-circle-linkedin">
-														<i class="ion-social-linkedin iconproperties icon--linkedin--fix"></i>
-												</div>
+
+                        <a href="http://facebook.com" target="_blank">
+                            <div class="sign-in__icon icon-circle icon-circle--facebook">
+                             <i class="ion-social-facebook iconproperties icon--facebook--fix"></i>
+                            </div>
+                        </a>
+
+                        <a href="http://twitter.com" target="_blank">
+                            <div class="sign-in__icon icon-circle icon-circle--twitter">
+                             <i class="ion-social-twitter iconproperties"></i>
+                            </div>
+                        </a>
+
+                        <a href="http://googleplus.com" target="_blank">
+                            <div class="sign-in__icon icon-circle icon-circle--googleplus">
+                            <i class="ion-social-googleplus iconproperties"></i>
+                            </div>
+                        </a>
+
+                        <a href="http://linkedin.com" target="_blank">
+                            <div class="sign-in__icon icon-circle icon-circle--linkedin">
+                            <i class="ion-social-linkedin iconproperties icon--linkedin--fix"></i>
+                            </div>
+                        </a>
+
                    </div>
-								 </a>
-               </div>
-       </div>
-
-        <div class="row">
-            <div class="contact">
-                    <div class="contact__left">
-                        <i class="ion-ios-telephone contact__icon"></i>
-                        <i class="ion-ios-location contact__icon"></i>
-                        <i class="ion-ios-email contact__icon"></i>
-                    </div>
-
-                    <div class="contact__right">
-                        <article class="contact__right__article">(912) 555-1234 (912) 555-5678</article>
-                        <article class="contact__right__article"><adress class="contact__adress">1600 Pennsylvania Ave NW. Washington DC 20500, USA</adress></article>
-                        <article class="contact__right__article"><adress>hello@website.com office@website.com</adress></article></div>
-                    </div>
         </div>
 
-				<div class="row">
-					<div class="slider">
-							<h4 class="h4 slider__h4">Featured Story</h4>
-							<p class="slider__p">Now that the holiday gift-giving time is over, we're sure many of our readers unwrapped some new consoles.
-								Despite its long life on the market...</p>
-							<button class="button slider__button slider__button--left"></button>
-							<button class="button slider__button slider__button--right"></button>
-							<div class="slider__indicators">
-								<i class="i--indicator i--indicator--first"></i>
-								<i class="i--indicator i--indicator--second"></i>
-								<i class="i--indicator i--indicator--third"></i>
-								<i class="i--indicator i--indicator--fourth"></i>
-							</div>
-					</div>
-				</div>
+        <div class="connect connect--newsletter">
+              <h3 class="h3">Join the Newsletter</h3>
+                    <p class="newsletter__p">Sign up for our personalized newsletter</p>
+                <form class="newsletter__form">
+                        <input type="email" class="input--email" placeholder="Enter email adress &period; &period; &period;">
+                        <button class="button button--signup">Sign Up</button>
+                </form>
+        </div>
 
 
+</div>
+
+</div>
+
+<div class="row">
+    <div class="slider">
+            <h4 class="h4 slider__h4">Featured Story</h4>
+            <p class="slider__p">Now that the holiday gift-giving time is over, we're sure many of our readers unwrapped some new consoles.
+                Despite its long life on the market...</p>
+            <button class="button slider__button slider__button--left"></button>
+            <button class="button slider__button slider__button--right"></button>
+            <div class="slider__indicators">
+                <i class="i--indicator i--indicator--first"></i>
+                <i class="i--indicator i--indicator--second"></i>
+                <i class="i--indicator i--indicator--third"></i>
+                <i class="i--indicator i--indicator--fourth"></i>
+            </div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/script.js"></script>
+<script>
+
+
+</script>
 </body>
 </html>
