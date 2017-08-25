@@ -100,7 +100,22 @@ ul
   align-items: center;
   flex-wrap: nowrap;
   border-bottom: 1px solid #c5cdd1;
+  cursor: pointer;
 }
+
+
+.menu__li:hover{
+  background-color: #55CCC8;
+}
+
+.menu__li:hover .menu__icon{
+  color: white;
+}
+
+.menu__li:hover .menu__span{
+  color: white;
+} 
+
 .menu__div{
   margin-left: 25px;
   width: 90%;
@@ -115,31 +130,6 @@ ul
   top: 5px;
 }
 
-/*
-@media only screen and (max-width: 720px) {
-  .menu__li{
-    justify-content: center;
-  }
-  .menu__div{
-    width: 40%;
-  }
-}
-@media only screen and (max-width: 590px) {
-  .menu__div{
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .menu__div{
-    width: 35%;
-  }
-}
-@media only screen and (max-width: 390px) {
-  .menu__div{
-    width: 42%;
-  }
-}
-*/
 /* CONTACT */
 .contact{
     width: 110%;
