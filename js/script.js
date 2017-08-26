@@ -91,6 +91,24 @@ $(document).ready(function() {
     }
   }, 10);
 
+  //Follow buttons
+  const followButton1 = document.querySelector('.ion-android-add-circle');
+  const followButton2 = document.querySelector('.ion-ios-checkmark');
+  const followButtons = [followButton1, followButton2];
+  
+  followButtons.forEach((followButton) => {
+    followButton.addEventListener('click', () => {
+      if(followButton.classList.contains('ion-android-add-circle')){
+        followButton.classList.remove('ion-android-add-circle');  
+        followButton.classList.add('ion-ios-checkmark');
+      }else if(followButton.classList.contains('ion-ios-checkmark')){
+        followButton.classList.add('ion-android-add-circle');
+        followButton.classList.remove('ion-ios-checkmark');  
+      }
+    });
+  });
+
+
   //Slider
 
   const slider = document.querySelector(".slider");
@@ -168,3 +186,6 @@ $(document).ready(function() {
 
   changeIndicatorBackground(1);
 });
+
+
+
