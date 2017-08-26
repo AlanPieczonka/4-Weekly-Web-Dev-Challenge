@@ -255,6 +255,7 @@ ul
   background-color: #56ccc8;
   font-size: 1.5rem;
   color: #152840;
+  cursor: pointer;
 }
 
 .blog__button::after{
