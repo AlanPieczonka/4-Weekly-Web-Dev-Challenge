@@ -1069,6 +1069,14 @@ ul
   cursor: pointer;
 }
 
+@media (max-width: 720px) {
+  .i--indicator {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+  }
+}
+
 .i--indicator:hover {
   background-color: #FFFFFF;
 }
