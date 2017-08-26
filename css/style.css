@@ -155,14 +155,14 @@ ul
     font-size: 2.7rem;
     padding: 0 14px 0 28px;
 }
-
-.contact--article{
+.contact--figure{
+    margin: 0;
     font-size: 1.4rem;
     display: inline-block;
 }
 
 @media only screen and (max-width: 775px) {
-.contact--article{
+.contact--figure{
     font-size: 1.2rem;
 }
 }
@@ -174,7 +174,7 @@ ul
           position: absolute;
           left: 10%;
         }
-        .contact--article{
+        .contact--figure{
           position: absolute;
           left: 40%;
         }
@@ -184,7 +184,7 @@ ul
         .contact__icon{
           left: 10%;
         }
-        .contact--article{
+        .contact--figure{
         left: 55%;
         }
 }
