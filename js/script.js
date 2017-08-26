@@ -118,6 +118,19 @@ $(document).ready(function() {
   const sliderButtonLeft = document.querySelector(".slider__button--left");
   const sliderButtonRight = document.querySelector(".slider__button--right");
 
+  const indicatorFirst = document.querySelector(".i--indicator--first");
+  const indicatorSecond = document.querySelector(".i--indicator--second");
+  const indicatorThird = document.querySelector(".i--indicator--third");
+  const indicatorFourth = document.querySelector(".i--indicator--fourth");
+
+  const indicators = [
+    indicatorFirst,
+    indicatorSecond,
+    indicatorThird,
+    indicatorFourth
+  ];
+
+
   sliderButtonLeft.addEventListener("click", function() {
     if (currentImage === 1) {
       currentImage = 4;
@@ -137,18 +150,6 @@ $(document).ready(function() {
     slider.style.backgroundImage = `url(./css/img/jimroot${currentImage}.jpg)`;
     changeIndicatorBackground(currentImage);
   });
-
-  const indicatorFirst = document.querySelector(".i--indicator--first");
-  const indicatorSecond = document.querySelector(".i--indicator--second");
-  const indicatorThird = document.querySelector(".i--indicator--third");
-  const indicatorFourth = document.querySelector(".i--indicator--fourth");
-
-  const indicators = [
-    indicatorFirst,
-    indicatorSecond,
-    indicatorThird,
-    indicatorFourth
-  ];
 
   indicators.forEach((indicator, index) => {
     indicator.addEventListener("click", () => {

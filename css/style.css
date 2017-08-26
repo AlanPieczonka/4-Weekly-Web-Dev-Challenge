@@ -563,6 +563,7 @@ ul
   list-style-type: none;
 }
 
+
 .divSocialList__li {
   margin-bottom: 28px;
   margin-left: 25px;
@@ -967,9 +968,9 @@ ul
   position: relative;
   font-family: "Roboto";
   color: #FFFFFF;
-  -webkit-transition: background-image 500ms linear;
-  -o-transition: background-image 500ms linear;
-  transition: background-image 500ms linear;
+  -webkit-transition: background-image 400ms linear;
+  -o-transition: background-image 400ms linear;
+  transition: background-image 400ms linear;
 }
 
 .slider__h4 {
