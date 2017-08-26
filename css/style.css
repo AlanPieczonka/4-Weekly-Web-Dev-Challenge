@@ -204,6 +204,8 @@ ul
     border-bottom: 0.1px solid #47637d;
     background-color: #152840;
     position: relative;
+    cursor: pointer;
+    
 }
 .blog__elem:hover{
  background-color: #263A54; 
