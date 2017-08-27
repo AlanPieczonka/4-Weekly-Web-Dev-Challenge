@@ -1,28 +1,28 @@
 $(document).ready(function() {
-  console.log("JS WORKS");
+  console.log('JS WORKS');
 
-  const header__hamburger = document.querySelector(".header__hamburger");
-  const li__iconSearch = document.querySelector(".li--icon--search");
+  const header__hamburger = document.querySelector('.header__hamburger');
+  const li__iconSearch = document.querySelector('.li--icon--search');
 
   function hamburgerIconOpen() {
-    $(".header__hamburger__icon--open").css("display", "block");
-    $(".header__hamburger__icon--close").css("display", "none");
+    $('.header__hamburger__icon--open').css('display', 'block');
+    $('.header__hamburger__icon--close').css('display', 'none');
   }
 
   function hamburgerIconClose() {
-    $(".header__hamburger__icon--open").css("display", "none");
-    $(".header__hamburger__icon--close").css("display", "block");
+    $('.header__hamburger__icon--open').css('display', 'none');
+    $('.header__hamburger__icon--close').css('display', 'block');
   }
 
   //HAMBURGER FUNCTIONALITY ON DESKTOP
   let nav__listIsOpened = true;
-  header__hamburger.addEventListener("click", function() {
+  header__hamburger.addEventListener('click', function() {
     if (nav__listIsOpened) {
-      $(".nav__div--list").fadeOut(300);
+      $('.nav__div--list').fadeOut(300);
       nav__listIsOpened = false;
       hamburgerIconClose();
     } else {
-      $(".nav__div--list").fadeIn(300);
+      $('.nav__div--list').fadeIn(300);
       nav__listIsOpened = true;
       hamburgerIconOpen();
     }
@@ -30,55 +30,53 @@ $(document).ready(function() {
 
   //HAMBURGER FUNCTIONALITY ON MOBILE
   let navMobileIsOpened = false;
-  header__hamburger.addEventListener("click", function() {
+  header__hamburger.addEventListener('click', function() {
     if (!navMobileIsOpened) {
-      $(".nav--mobile").slideDown(function() {
+      $('.nav--mobile').slideDown(function() {
         navMobileIsOpened = true;
       });
     } else {
-      $(".nav--mobile").slideUp(function() {
+      $('.nav--mobile').slideUp(function() {
         navMobileIsOpened = false;
       });
     }
   });
 
-  //HAMBURGER ICON OPEN/CLOSE
-
   //HEADER SEARCH INPUT
   let header__inputIsOpened = false;
-  li__iconSearch.addEventListener("click", function() {
+  li__iconSearch.addEventListener('click', function() {
     if (header__inputIsOpened === false) {
-      $(".nav__line--first").addClass("closed");
-      $(".header__input").fadeIn(300, function() {
+      $('.nav__line--first').addClass('closed');
+      $('.header__input').fadeIn(300, function() {
         header__inputIsOpened = true;
       });
     } else {
-      $(".header__input").fadeOut(300, function() {
+      $('.header__input').fadeOut(300, function() {
         header__inputIsOpened = false;
       });
       setTimeout(function() {
-        $(".nav__line--first").delay(1000).removeClass("closed");
+        $('.nav__line--first').delay(1000).removeClass('closed');
       }, 300);
     }
   });
 
   //SOCIAL DIVS COUNTERS
-  const fbCounter = document.querySelector(".social__span--counter--fb");
+  const fbCounter = document.querySelector('.social__span--counter--fb');
   let fbCount = 0;
   window.setInterval(function() {
     if (fbCount >= 156) {
       clearInterval(fbCount);
     } else {
       fbCount += 2;
-      fbCounter.innerHTML = fbCount + "K";
+      fbCounter.innerHTML = fbCount + 'K';
     }
   }, 10);
 
   const twitterCounter = document.querySelector(
-    ".social__span--counter--twitter"
+    '.social__span--counter--twitter'
   );
-  twitterCounter.addEventListener("click", function() {
-    console.log("twitter counter");
+  twitterCounter.addEventListener('click', function() {
+    console.log('twitter counter');
   });
 
   let twitterCount = 0;
@@ -87,7 +85,7 @@ $(document).ready(function() {
       clearInterval(twitterCount);
     } else {
       twitterCount += 1;
-      twitterCounter.innerHTML = twitterCount + "K";
+      twitterCounter.innerHTML = twitterCount + 'K';
     }
   }, 10);
 
@@ -95,33 +93,32 @@ $(document).ready(function() {
   const followButton1 = document.querySelector('.ion-android-add-circle');
   const followButton2 = document.querySelector('.ion-ios-checkmark');
   const followButtons = [followButton1, followButton2];
-  
-  followButtons.forEach((followButton) => {
+
+  followButtons.forEach(followButton => {
     followButton.addEventListener('click', () => {
-      if(followButton.classList.contains('ion-android-add-circle')){
-        followButton.classList.remove('ion-android-add-circle');  
+      if (followButton.classList.contains('ion-android-add-circle')) {
+        followButton.classList.remove('ion-android-add-circle');
         followButton.classList.add('ion-ios-checkmark');
-      }else if(followButton.classList.contains('ion-ios-checkmark')){
+      } else if (followButton.classList.contains('ion-ios-checkmark')) {
         followButton.classList.add('ion-android-add-circle');
-        followButton.classList.remove('ion-ios-checkmark');  
+        followButton.classList.remove('ion-ios-checkmark');
       }
     });
   });
 
-
   //Slider
 
-  const slider = document.querySelector(".slider");
+  const slider = document.querySelector('.slider');
 
   let currentImage = 1;
 
-  const sliderButtonLeft = document.querySelector(".slider__button--left");
-  const sliderButtonRight = document.querySelector(".slider__button--right");
+  const sliderButtonLeft = document.querySelector('.slider__button--left');
+  const sliderButtonRight = document.querySelector('.slider__button--right');
 
-  const indicatorFirst = document.querySelector(".i--indicator--first");
-  const indicatorSecond = document.querySelector(".i--indicator--second");
-  const indicatorThird = document.querySelector(".i--indicator--third");
-  const indicatorFourth = document.querySelector(".i--indicator--fourth");
+  const indicatorFirst = document.querySelector('.i--indicator--first');
+  const indicatorSecond = document.querySelector('.i--indicator--second');
+  const indicatorThird = document.querySelector('.i--indicator--third');
+  const indicatorFourth = document.querySelector('.i--indicator--fourth');
 
   const indicators = [
     indicatorFirst,
@@ -130,8 +127,7 @@ $(document).ready(function() {
     indicatorFourth
   ];
 
-
-  sliderButtonLeft.addEventListener("click", function() {
+  sliderButtonLeft.addEventListener('click', function() {
     if (currentImage === 1) {
       currentImage = 4;
     } else {
@@ -141,7 +137,7 @@ $(document).ready(function() {
     changeIndicatorBackground(currentImage);
   });
 
-  sliderButtonRight.addEventListener("click", function() {
+  sliderButtonRight.addEventListener('click', function() {
     if (currentImage === 4) {
       currentImage = 1;
     } else {
@@ -152,7 +148,7 @@ $(document).ready(function() {
   });
 
   indicators.forEach((indicator, index) => {
-    indicator.addEventListener("click", () => {
+    indicator.addEventListener('click', () => {
       const currentNumber = index + 1;
       slider.style.backgroundImage = `url(./css/img/jimroot${currentNumber}.jpg)`;
       currentImage = currentNumber;
@@ -163,7 +159,7 @@ $(document).ready(function() {
 
   const resetIndicatorsColor = () => {
     indicators.forEach(indicator => {
-      indicator.style.backgroundColor = "";
+      indicator.style.backgroundColor = '';
     });
   };
 
@@ -171,22 +167,19 @@ $(document).ready(function() {
     resetIndicatorsColor();
     switch (which) {
       case 1:
-        indicatorFirst.style.backgroundColor = "white";
+        indicatorFirst.style.backgroundColor = 'white';
         break;
       case 2:
-        indicatorSecond.style.backgroundColor = "white";
+        indicatorSecond.style.backgroundColor = 'white';
         break;
       case 3:
-        indicatorThird.style.backgroundColor = "white";
+        indicatorThird.style.backgroundColor = 'white';
         break;
       case 4:
-        indicatorFourth.style.backgroundColor = "white";
+        indicatorFourth.style.backgroundColor = 'white';
         break;
     }
   };
 
   changeIndicatorBackground(1);
 });
-
-
-

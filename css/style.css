@@ -568,6 +568,7 @@ ul
 .divSocialList__li {
   margin-bottom: 28px;
   margin-left: 25px;
+  cursor: pointer;  
 }
 
 .divSocialList__circle {
@@ -926,35 +927,28 @@ ul
   z-index: 9999;
 }
 
-.hover__facebook:hover {
+.divSocialList__li--facebook:hover .hover__facebook{
   background-color: #4D6BAA;
 }
 
-.hover__twitter:hover {
+
+.divSocialList__li--twitter:hover .hover__twitter{
   background-color: #4FC6F8;
 }
 
-.hover__googleplus:hover {
+.divSocialList__li--googleplus:hover .hover__googleplus{
   background-color: #D34836;
 }
 
-.hover__twitter:hover {
-  background-color: #4FC6F8;
-}
-
-.hover__rss:hover {
+.divSocialList__li--rss:hover .hover__rss{
   background-color: #FF9900;
 }
 
-.hover__pinterest:hover {
+.divSocialList__li--pinterest:hover .hover__pinterest{
   background-color: #CB2028;
 }
 
-.hover__linkedin:hover {
-  background-color: #238CC8;
-}
-
-
+/*SLIDER*/
 .slider {
   background: no-repeat center center;
   background-image: url(img/jimroot1.jpg);
