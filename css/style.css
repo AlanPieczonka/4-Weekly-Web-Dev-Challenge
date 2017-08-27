@@ -124,11 +124,10 @@ ul
 .contact{
     width: 110%;
     height: 36%;
-    background-color: darkslateblue;
     font-family: "Roboto";
     font-size: 1.4rem;
-    background-color: #B2B9BD;
-    color: #FFFFFF;
+    background-color: #b2b9bd;
+    color: #ffffff;
 }
 
 .contact__ul{
@@ -151,7 +150,7 @@ ul
     display: inline-block;
 }
 
-/*END OF CONTACT */
+/*BLOG*/
 
 .blog--container{
     grid-column: 2 / 3;
@@ -168,11 +167,11 @@ ul
     
 }
 .blog__elem:hover{
- background-color: #263A54; 
+ background-color: #263a54; 
 }
 
 .blog__elem--lightblue{
-   background-color: #263A54; 
+   background-color: #263a54; 
 }
 
 .h2{
@@ -242,7 +241,7 @@ ul
 .header {
   width: 100%;
   height: 60px;
-  background-color: #56CCC8;
+  background-color: #56ccc8;
   margin-top: 120px;
   margin-bottom: 10px;
 }
@@ -260,7 +259,7 @@ ul
   margin: 0;
   position: relative;
   bottom: 4px;
-  border: 1px solid #B7BDC1;
+  border: 1px solid #b7bdc1;
   width: 122px;
   font-size: 1.5rem;
   margin-left: 12px;
@@ -278,7 +277,7 @@ ul
 }
 
 .header__hamburger__icon {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 3rem;
 }
 
@@ -306,7 +305,7 @@ ul
   float: right;
   width: calc(100% - 60px);
   height: 60px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .nav__div--list {
@@ -330,7 +329,7 @@ ul
 }
 
 .li:hover {
-  color: #66D0CC;
+  color: #66d0cc;
   cursor: pointer;
 }
 
@@ -350,30 +349,30 @@ ul
 
 .nav__icons--social {
   font-size: 2.4rem;
-  color: #B2B9BD;
+  color: #b2b9bd;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
 }
 
 .nav__icons--social--search:hover, .nav__icons--social--search:active, .nav__icons--social--search:focus {
-  color: #56CCC8;
+  color: #56ccc8;
 }
 
 .nav__icons--social--fb:hover, .nav__icons--social--fb:active, .nav__icons--social--fb:focus {
-  color: #4D6BAA;
+  color: #4d6baa;
 }
 
 .nav__icons--social--twitter:hover, .nav__icons--social--twitter:active, .nav__icons--social--twitter:focus {
-  color: #4FC6F8;
+  color: #4fc6f8;
 }
 
 .nav__icons--social--gplus:hover, .nav__icons--social--gplus:active, .nav__icons--social--gplus:focus {
-  color: #D34836;
+  color: #d34836;
 }
 
 .nav__icons--social--user:hover, .nav__icons--social--user:active, .nav__icons--social--user:focus {
-  color: #87D37C;
+  color: #87d37c;
 }
 
 .nav__line::after {
@@ -382,7 +381,7 @@ ul
   height: 60px;
   bottom: -19px;
   width: 1px;
-  background-color: #DDE2E4;
+  background-color: #dde2e4;
   margin-left: 20px;
 }
 
@@ -395,7 +394,7 @@ ul
   width: 100%;
   height: 270px;
   margin: 0 0 10px 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: none;
   padding-top: 40px;
 }
@@ -406,34 +405,34 @@ ul
 
 .nav--mobile__li {
   display: block;
-  border-top: 1px solid #56CCC8;
-  border-bottom: 1px solid #56CCC8;
+  border-top: 1px solid #56ccc8;
+  border-bottom: 1px solid #56ccc8;
   width: 100%;
   margin: 0 0 20px 0;
   text-align: center;
 }
 
 .nav--mobile__li__a {
-  color: #BDC3C7;
+  color: #bdc3c7;
 }
 
 /*SOCIAL*/
 .social{
     position: relative;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 .social--fb {
-  background-color: #4D6BAA;
+  background-color: #4d6baa;
 }
 
 .social--twitter {
-  background-color: #4FC6F8;
+  background-color: #4fc6f8;
 }
 
 .social__span {
   font-family: "Roboto";
   font-size: 1.6rem;
-  color: #FFFFFF;
+  color: #ffffff;
   position: absolute;
   font-weight: 300;
   bottom: 20px;
@@ -479,12 +478,12 @@ ul
 /*END OF SOCIAL*/
 
 .element{
-    border: 1px orange solid;
+    border: 1px #ffa500 solid;
 }
 
 
 .divSocialList {
-    background: white;
+    background: #ffffff;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -507,12 +506,12 @@ ul
   display: inline;
   width: 100px;
   height: 100px;
-  background-color: gray;
+  background-color: #808080;
 }
 
 .divSocialList__i {
   font-size: 4rem;
-  color: blue;
+  color: #0000ff;
 }
 
 .divSocialList__span {
@@ -540,7 +539,7 @@ ul
 }
 
 .connect--signin{
-    background-color: white;
+    background-color: #ffffff;
     grid-column: 3 / 5;
     grid-row: 3 / 4;
     padding-left: 8px;
@@ -581,22 +580,22 @@ ul
 }
 
 .icon-circle--facebook {
-  background-color: #4D6BAA;
+  background-color: #4d6baa;
   cursor: pointer;
 }
 
 .icon-circle--twitter {
-  background-color: #4FC6F8;
+  background-color: #4fc6f8;
   cursor: pointer;
 }
 
 .icon-circle--googleplus {
-  background-color: #D34836;
+  background-color: #d34836;
   cursor: pointer;
 }
 
 .icon-circle--linkedin {
-  background-color: #238CC8;
+  background-color: #238cc8;
   cursor: pointer;
 }
 
@@ -608,11 +607,11 @@ ul
   padding: 0;
   width: 0px;
   height: 0px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .iconproperties--signin {
-  color: #4D6BAA;
+  color: #4d6baa;
 }
 
 .icon--facebook--fix {
@@ -628,7 +627,7 @@ ul
 .connect--newsletter{
     color: #475055;
     font-family: "Roboto";
-    background-color: white;
+    background-color: #ffffff;
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 4;
@@ -668,9 +667,9 @@ ul
 
 .input--email {
   width: 60%;
-  border: 1px solid #B2B9BD;
+  border: 1px solid #b2b9bd;
   font-size: 1.5rem;
-  color: #B2B9BD;
+  color: #b2b9bd;
   margin: 0 auto;
   text-align: center;
     height: 45px;
@@ -683,16 +682,14 @@ ul
   text-transform: uppercase;
   border: 0;
   border-radius: 5%;
-  background-color: #EA6060;
-  color: #FFFFFF;
+  background-color: #ea6060;
+  color: #ffffff;
   font-size: 1.6rem;
   cursor: pointer;
   margin-right: 25px;
 }
 
 /*END OF CONNECT */
-
-
 
 .firsticonhover {
   position: absolute;
@@ -703,24 +700,23 @@ ul
 }
 
 .divSocialList__li--facebook:hover .hover__facebook{
-  background-color: #4D6BAA;
+  background-color: #4d6baa;
 }
 
-
 .divSocialList__li--twitter:hover .hover__twitter{
-  background-color: #4FC6F8;
+  background-color: #4fc6f8;
 }
 
 .divSocialList__li--googleplus:hover .hover__googleplus{
-  background-color: #D34836;
+  background-color: #d34836;
 }
 
 .divSocialList__li--rss:hover .hover__rss{
-  background-color: #FF9900;
+  background-color: #ff9900;
 }
 
 .divSocialList__li--pinterest:hover .hover__pinterest{
-  background-color: #CB2028;
+  background-color: #cb2028;
 }
 
 /*SLIDER*/
@@ -737,7 +733,7 @@ ul
   margin-top: 10px;
   position: relative;
   font-family: "Roboto";
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition: background-image 200ms linear;
   -o-transition: background-image 200ms linear;
   transition: background-image 200ms linear;
@@ -765,7 +761,7 @@ ul
   border: 0px;
   width: 35px;
   height: 50px;
-  background-color: white;
+  background-color: #ffffff;
   position: absolute;
   border-radius: 7%;
 }
@@ -776,7 +772,7 @@ ul
   left: 75px;
   width: 170px;
   height: 55px;
-  border: 1px white solid;
+  border: 1px #ffffff solid;
   border-radius: 4%;
   background-color: transparent;
   font-size: 1.6rem;
@@ -794,8 +790,8 @@ ul
 
 .slider__button--left::after {
   content: '';
-  color: black;
-  border: solid black;
+  color: #000000;
+  border: solid #000000;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -812,7 +808,7 @@ ul
 .slider__button--right::after {
   content: '';
   color: #000000;
-  border: solid black;
+  border: solid #000000;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -845,7 +841,7 @@ ul
   height: 12.5px;
   border-radius: 50%;
   margin-left: 5px;
-  border: 1px pink solid;
+  border: 1px #ffc0cb solid;
   cursor: pointer;
 }
 

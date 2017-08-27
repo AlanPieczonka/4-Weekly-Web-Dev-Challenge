@@ -81,6 +81,15 @@
   .divSocialList__ul {
     padding: 5px 17% 0 17%;
   }
+
+  .menu{
+      width: 100%;
+  }
+
+  .contact{
+      width: 100%;
+  }
+
   .i--indicator {
     width: 25px;
     height: 25px;
