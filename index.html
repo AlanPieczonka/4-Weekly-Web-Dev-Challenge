@@ -10,12 +10,13 @@
         <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/queries.css">
-         <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
 
     <title>4 Weekly Web Dev Challenge</title>
 </head>
 <body>
 
+<section id="section--page-header">
         <div class="row">
         <header class="header">
             <button class="header__hamburger">
@@ -46,7 +47,9 @@
             </nav>
         </header>
     </div>
+</section>
 
+<section id="section--mobilenav"
     <div class="row">
         <nav class="nav nav--mobile">
                    <ul class="nav--mobile__ul">
@@ -58,9 +61,10 @@
                     </ul>
         </nav>
     </div>
+</section>
 
-<div class="container">
-
+<section id="section--main">
+<div class="main--container">
         <div class="menuandcontact">
             <div class="menu">
                     <ul class="menu__ul">
@@ -284,16 +288,17 @@
 
 
 </div>
+</section>
 
-
-
+<section id="section--slider">
 <div class="row">
     <div class="slider">
             <h4 class="h4 slider__h4">Featured Story</h4>
             <p class="slider__p">Now that the holiday gift-giving time is over, we're sure many of our readers unwrapped some new consoles.
                 Despite its long life on the market...</p>
-            <button class="button slider__button slider__button--left"></button>
-            <button class="button slider__button slider__button--right"></button>
+            <a href="#"><button type="button" class="button slider__button--viewmore">View More</button></a>
+            <button type="button" class="button slider__button slider__button--left"></button>
+            <button type="button" class="button slider__button slider__button--right"></button>
             <div class="slider__indicators">
                 <i class="i--indicator i--indicator--first"></i>
                 <i class="i--indicator i--indicator--second"></i>
@@ -302,7 +307,7 @@
             </div>
         </div>
 </div>
-
+</section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/script.js"></script>
 <script>
